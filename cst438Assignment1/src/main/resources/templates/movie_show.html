@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+    <title>Your Movie Rating</title>
+</head>
+<body>
+	<h2>Your movie rating is successfully added, thank you!</h2>
+	Title: <span th:inline="text"> [[${movieRating.title}]] </span> <br /> 
+	Rating: <span th:inline="text"> [[${movieRating.rating}]] </span> <br />
+	First name: <span th:inline="text"> [[${movieRating.firstName}]] </span> <br />
+	Last name: <span th:inline="text"> [[${movieRating.lastName}]] </span> <br />
+	Posting Time: <span th:inline="text"> [[${movieRating.date}]]</span> <br />
+	<br />
+	<a href="/movies/new">Add another movie rating</a>	
+</body>
+</html>
