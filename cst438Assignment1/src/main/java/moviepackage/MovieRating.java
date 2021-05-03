@@ -39,6 +39,9 @@ public class MovieRating {
     @Size(min = 1, max = 35)
     private String lastName;
 
+    /**
+     * Suggest moving all imports to the top of the file.
+     */
     private java.util.Date date;
 
     public MovieRating() {
